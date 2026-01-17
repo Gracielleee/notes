@@ -1,0 +1,50 @@
+### Test: Check root route
+GET http://localhost:3000/
+Accept: application/json
+
+###
+
+### Test: Get all notes (should be empty at first)
+GET http://localhost:3000/notes
+Accept: application/json
+
+###
+
+### Test: Create a new note
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+  "text": "My first note from REST Client"
+}
+
+###
+
+### Test: Get all notes again (should return one note)
+GET http://localhost:3000/notes
+Accept: application/json
+
+###
+
+### Test: Error case - create note with empty body
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+}
+
+###
+
+### Test: Create another note
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+  "text": "Second note!"
+}
+
+###
+
+### Test: Get all notes (should return two notes)
+GET http://localhost:3000/notes
+Accept: application/json

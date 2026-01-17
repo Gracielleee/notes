@@ -1,0 +1,16 @@
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+node_modules/
+
+.DS_Store
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
