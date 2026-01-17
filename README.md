@@ -78,6 +78,17 @@ npm start
   - GET `/notes` → fetch all notes
   - POST `/notes` → add a note `{ "text": "My first note" }`
 
+### If you encounter error when running the server
+
+```bash
+# Delete dependencies and lock file
+rm -rf node_modules package-lock.json
+
+# Reinstall dependencies && start the ddevelopment server
+npm install && npm run dev
+
+```
+
 ---
 
 ## Test API Endpoints
