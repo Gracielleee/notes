@@ -1,7 +1,7 @@
 // controllers/notes.controller.js
 
 // TODO1: Import Note model
-const Note = require('../models/Note,js');
+const Note = require('../models/Note.js');
 
 // TODO2: Create a function to GET all notes
 // Explain: Fetch all notes from MongoDB and send as JSON
