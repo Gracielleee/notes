@@ -1,14 +1,17 @@
 // TODO1: Import Express
+const express = require('express');
 
 // TODO2: Import controller functions (getNotes, createNote)
+const { getNotes, createNote } = require('../controllers/notes.controller.js');
 
 // TODO3: Create router instance
+const router = express.Router();
 
 // TODO4: Define GET /notes route → call getNotes
-// Your code here
+router.get('/notes', getNotes);
 
 // TODO5: Define POST /notes route → call createNote
-// Your code here
+router.post('/notes', createNote);
 
 // TODO6: Export router
-// Your code here
+module.exports = router;
